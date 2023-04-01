@@ -1,4 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Oswald:500');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+
+* {
+    font-family: 'Lato', sans-serif;
+}
 
 .back {
     display: flex;
@@ -9,37 +14,6 @@
     align-items: center;
     justify-content: center;
 }
-
-.menuContainer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    min-height: 14vh;
-    background: linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(184, 184, 184, 1) 99%);
-}
-
-.iconContainer {
-    display: none;
-}
-
-@media screen and (max-width: 768px) {
-    .menuContainer {
-        align-items: center;
-        justify-content: right;
-    }
-
-    .iconContainer {
-        display: flex;
-        margin-right: 5%;
-    }
-
-    .back {
-        display: none;
-    }
-}
-
-
-
 
 
 .back a {
@@ -109,3 +83,62 @@
         transform: translateY(0);
     }
 }
+
+/*-------------------- MENU HAMBURGUER -----------------------*/
+
+.menuContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 14vh;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(184, 184, 184, 1) 99%);
+}
+
+.iconContainer {
+    display: none;
+}
+
+.dropdownMenu {
+    display: none;
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .menuContainer {
+        align-items: center;
+    }
+
+    .iconContainer {
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+        justify-content: space-between;
+    }
+    .iconContainerHamburguer {
+        margin-left: 50vw;
+    }
+
+    .back {
+        display: none;
+    }
+
+    .dropdownMenu {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        background: linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(184, 184, 184, 1) 99%);
+        padding-bottom: 4%;
+    }
+
+    .link {
+        text-decoration: none;
+        color: black;
+        font-size: 25px;
+        line-height: 50px;
+        font-weight: bold;
+    }
+}
+
+
+/*-------------------- MENU HAMBURGUER -----------------------*/

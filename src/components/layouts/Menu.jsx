@@ -1,9 +1,15 @@
 import styles from './Menu.module.css'
 import { Link } from 'react-router-dom'
 import icon from '../../assets/img/menu-de-hamburguer.png'
+import money from '../../assets/img/money.png'
+import { useState } from 'react';
 
 function Menu() {
+    const [showMenu, setShowMenu] = useState(false);
 
+    const toggleMenu = () => {
+        setShowMenu(!showMenu);
+    }
 
     return (
         <>
@@ -16,12 +22,23 @@ function Menu() {
                     <Link to="/cliente">Suporte ao cliente</Link>
                 </nav>
                 <div className={styles.iconContainer}>
-                    <img src={icon} alt="Menu" width='40px' />
+                    <img src={money} alt="Menu" width='40px' />
+                    <img src={icon} className={styles.iconContainerHamburguer}  alt="Menu" width='40px' onClick={toggleMenu} />
                 </div>
             </div>
+            {showMenu && (
+                <div className={styles.dropdown}>
+                    <div className={styles.dropdownMenu}>
+                        <Link to="/" className={styles.link} onClick={toggleMenu}>Home</Link>
+                        <Link to="/calculadora" className={styles.link} onClick={toggleMenu}>Calculadora de orçamento</Link>
+                        <Link to="/grafico" className={styles.link} onClick={toggleMenu}>Gráficos e relatórios</Link>
+                        <Link to="/contas" className={styles.link} onClick={toggleMenu}>Gerenciamento de contas</Link>
+                        <Link to="/cliente" className={styles.link} onClick={toggleMenu}>Suporte ao cliente</Link>
+                    </div>
+                </div>
+            )}
         </>
     )
 }
 
-
-export default Menu
+export default Menu;
