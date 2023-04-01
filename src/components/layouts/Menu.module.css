@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald:500');
+
+.back {
+    display: flex;
+    width: 100%;
+    height: 14vh;
+    background: rgb(255, 255, 255);
+    background: linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(184, 184, 184, 1) 99%);
+    align-items: center;
+    justify-content: center;
+}
+
+.menuContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 14vh;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(184, 184, 184, 1) 99%);
+}
+
+.iconContainer {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    .menuContainer {
+        align-items: center;
+        justify-content: right;
+    }
+
+    .iconContainer {
+        display: flex;
+        margin-right: 5%;
+    }
+
+    .back {
+        display: none;
+    }
+}
+
+
+
+
+
+.back a {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #000000;
+    margin: 0 15px;
+    font-size: 20px;
+    letter-spacing: 1px;
+    position: relative;
+    display: inline-block;
+}
+
+.back a:before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    background: #16151b;
+    top: 47%;
+    animation: out 0.2s cubic-bezier(1, 0, 0.58, 0.97) 1 both;
+}
+
+.back a:hover:before {
+    animation: in 0.2s cubic-bezier(1, 0, 0.58, 0.97) 1 both;
+
+}
+
+@keyframes in {
+    0% {
+        width: 0;
+        left: 0;
+        right: auto;
+    }
+
+    100% {
+        left: 0;
+        right: auto;
+        width: 100%;
+    }
+}
+
+@keyframes out {
+    0% {
+        width: 100%;
+        left: auto;
+        right: 0;
+    }
+
+    100% {
+        width: 0;
+        left: auto;
+        right: 0;
+    }
+}
+
+@keyframes show {
+    0% {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
