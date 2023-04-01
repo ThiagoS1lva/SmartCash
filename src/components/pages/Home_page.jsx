@@ -1,9 +1,10 @@
+import Home_image from '../layouts/Home_image'
 
 function Home_page() {
 
     return (
         <>
-        Teste
+        <Home_image/>
         </>
     )
 }
