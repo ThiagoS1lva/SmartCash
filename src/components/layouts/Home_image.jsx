@@ -11,10 +11,10 @@ function Home_image() {
         <Container>
             <Row>
                 <Col>
-                    <h2 className={styles.text}>Transforme sua vida financeira de maneira fácil e inteligente com nosso site de finanças. Organize suas finanças pessoais e conquiste a tão sonhada estabilidade financasdeira.</h2>
+                    <h2 className={styles.text}>Transforme sua vida financeira de maneira fácil e inteligente com nosso site de finanças. Organize suas finanças pessoais e conquiste a tão sonhada <b>estabilidade financeira.</b></h2>
                 </Col>
                 <Col>
-                    <img src={imagem} />
+                    <img src={imagem}/>
                 </Col>
             </Row>
         </Container>
