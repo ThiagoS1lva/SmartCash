@@ -1,0 +1,18 @@
+.container {
+    width: 65%;
+    font-size: 30px;
+    text-align: justify;
+    margin-top: 3%;
+}
+
+.container p {
+    margin-bottom: 5%;
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        font-size: 20px;
+        width: 85%;
+    }
+
+}

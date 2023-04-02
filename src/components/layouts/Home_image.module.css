@@ -9,6 +9,8 @@
 @media screen and (max-width: 768px) {
     .text {
         margin-top: 10%;
+        font-size: 20px;
+        text-align: justify;
     }
     .imagem {
         width: 100%;

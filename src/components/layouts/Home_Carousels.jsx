@@ -7,7 +7,7 @@ import imagem3 from '../../assets/img/3.png'
 
 function Home_Carousels() {
     return (
-        <div style={{backgroundColor:'rgba(184, 184, 184, 1)'}}>
+        <div style={{backgroundColor:'#e2dfdf'}}>
             <div className={styles.children}>
                 <Carousel className="mx-auto">
                     <Carousel.Item>
