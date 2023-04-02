@@ -20,7 +20,7 @@ function Footer() {
                         </ul>
                     </div>
                     <div className={styles.footercol}>
-                        <h4>Nossos Produtos</h4>
+                        <h4>Nossas Páginas</h4>
                         <ul>
                             <li><Link to="/">Home</Link></li>
                             <li><Link to="/calculadora">Calculadora de orçamento</Link></li>

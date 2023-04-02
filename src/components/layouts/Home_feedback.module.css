@@ -1,0 +1,16 @@
+.container_feedback {
+    margin-bottom: 4%;
+}
+
+.cardTitle_feedback {
+    font-weight: bold;
+}
+.cardText_feedback {
+    font-size: 18px;
+}
+
+@media screen and (max-width: 768px){
+    .col_feedback {
+        margin-bottom: 5%;
+    }
+}
