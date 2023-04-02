@@ -14,21 +14,21 @@ function Home_Carousels() {
                         <img
                             className="d-block w-100"
                             src={imagem1}
-                            alt="First slide"
+                            alt="Primeiro slide"
                         />
                     </Carousel.Item>
                     <Carousel.Item>
                         <img
                             className="d-block w-100"
                             src={imagem2}
-                            alt="Second slide"
+                            alt="Segundo slide"
                         />
                     </Carousel.Item>
                     <Carousel.Item>
                         <img
                             className="d-block w-100"
                             src={imagem3}
-                            alt="Third slide"
+                            alt="Terceiro slide"
                         />
                     </Carousel.Item>
                 </Carousel>

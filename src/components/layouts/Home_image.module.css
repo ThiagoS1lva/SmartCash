@@ -5,9 +5,14 @@
     margin-top: 24%;
 }
 
+
 @media screen and (max-width: 768px) {
     .text {
         margin-top: 10%;
+    }
+    .imagem {
+        width: 100%;
+        margin-top: 50%;
     }
 
 }

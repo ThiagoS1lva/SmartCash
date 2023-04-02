@@ -14,7 +14,7 @@ function Home_image() {
                     <h2 className={styles.text}>Transforme sua vida financeira de maneira fácil e inteligente com nosso site de finanças. Organize suas finanças pessoais e conquiste a tão sonhada <b>estabilidade financeira.</b></h2>
                 </Col>
                 <Col>
-                    <img src={imagem}/>
+                    <img src={imagem} className={styles.imagem}/>
                 </Col>
             </Row>
         </Container>
