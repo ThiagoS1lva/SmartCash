@@ -1,0 +1,14 @@
+{
+    "Renda":[],
+    "Despesas":[],
+    "categories":[
+        {
+            "name":"Fixa",
+            "id":1
+        },
+        {
+            "name":"Variavel",
+            "id":2
+        }
+    ]
+}
