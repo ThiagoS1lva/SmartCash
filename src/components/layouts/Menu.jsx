@@ -16,7 +16,7 @@ function Menu() {
             <div className={styles.menuContainer}>
                 <nav className={styles.back}>
                     <Link to="/">Home</Link>
-                    <Link to="/calculadora">Calculadora de orçamento</Link>
+                    <Link to="/finanças">Finanças</Link>
                     <Link to="/grafico">Gráficos e relatórios</Link>
                     <Link to="/contas">Gerenciamento de contas</Link>
                     <Link to="/cliente">Suporte ao cliente</Link>
@@ -30,7 +30,7 @@ function Menu() {
                 <div className={styles.dropdown}>
                     <div className={styles.dropdownMenu}>
                         <Link to="/" className={styles.link} onClick={toggleMenu}>Home</Link>
-                        <Link to="/calculadora" className={styles.link} onClick={toggleMenu}>Calculadora de orçamento</Link>
+                        <Link to="/finanças" className={styles.link} onClick={toggleMenu}>Finanças</Link>
                         <Link to="/grafico" className={styles.link} onClick={toggleMenu}>Gráficos e relatórios</Link>
                         <Link to="/contas" className={styles.link} onClick={toggleMenu}>Gerenciamento de contas</Link>
                         <Link to="/cliente" className={styles.link} onClick={toggleMenu}>Suporte ao cliente</Link>

@@ -3,6 +3,8 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import FormFinanças from './FormFinanças';
+import FormDespesas from './FormDespesas';
 
 function Calculadora_main() {
     return (
@@ -12,7 +14,7 @@ function Calculadora_main() {
                     <h1 className={styles.ganhos_calculadora}>Ganhos</h1>
                     <Row>
                         <Col>
-                            <h2>Entrada de dados</h2>
+                            <FormFinanças btnText="Adicionar renda"/>
                         </Col>
                         <Col>
                             <h2>Saida dos dados</h2>
@@ -20,10 +22,17 @@ function Calculadora_main() {
                     </Row>
                 </Col>
 
+
+
+
                 <Col>
                 <h1 className={styles.despesas_calculadora}>Despesas</h1>
                 <Row>
                     <Col>
+                    <FormDespesas btnText="Adicionar despesa"/>
+                    </Col>
+                    <Col>
+                    <h2>Saida de dados</h2>
                     </Col>
                 </Row>
                 </Col>

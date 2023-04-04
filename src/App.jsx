@@ -16,7 +16,7 @@ function App() {
       <Menu />
       <Routes>
         <Route path='/' element={<Home_page />} />
-        <Route path='/calculadora' element={<Calculadora />} />
+        <Route path='/finanças' element={<Calculadora />} />
         <Route path='/grafico' element={<Grafico />} />
         <Route path='/contas' element={<Contas />} />
         <Route path='/cliente' element={<Cliente />} />
