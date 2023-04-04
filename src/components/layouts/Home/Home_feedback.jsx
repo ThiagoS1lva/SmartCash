@@ -4,9 +4,9 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Card from 'react-bootstrap/Card';
-import pessoa1 from '../../assets/img/pessoa1.jpg'
-import pessoa2 from '../../assets/img/pessoa2.jpg'
-import pessoa3 from '../../assets/img/pessoa3.jpg'
+import pessoa1 from '../../../assets/img/pessoa1.jpg'
+import pessoa2 from '../../../assets/img/pessoa2.jpg'
+import pessoa3 from '../../../assets/img/pessoa3.jpg'
 
 function Home_feedback() {
     return (
