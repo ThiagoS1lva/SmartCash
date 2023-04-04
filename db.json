@@ -1,14 +1,37 @@
 {
-    "Renda":[],
-    "Despesas":[],
-    "categories":[
-        {
-            "name":"Fixa",
-            "id":1
-        },
-        {
-            "name":"Variavel",
-            "id":2
-        }
-    ]
+  "finances": [
+    {
+      "name": "Bolsa",
+      "budget": "101",
+      "data": "2023-04-11",
+      "category_id": "1",
+      "id": 1
+    }
+  ],
+  "despesas": [
+    {
+      "name": "Jogos",
+      "budget": "200",
+      "data": "2023-04-06",
+      "category_id": "2",
+      "id": 1
+    },
+    {
+      "name": "PeçA",
+      "budget": "150",
+      "data": "2023-04-04",
+      "category_id": "2",
+      "id": 2
+    }
+  ],
+  "categories": [
+    {
+      "name": "Fixa",
+      "id": 1
+    },
+    {
+      "name": "Variavel",
+      "id": 2
+    }
+  ]
 }

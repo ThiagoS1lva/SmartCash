@@ -6,3 +6,17 @@
     color: red;
     font-weight: bold;
 }
+
+.titleFinance {
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+    margin: 0 auto;
+    margin-top: 2%;
+}
+.titleFinance h2 {
+    font-weight: bold;
+}
+.titleFinance h2:last-child {
+    padding-right: 10%;
+}

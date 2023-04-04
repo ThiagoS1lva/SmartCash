@@ -1,0 +1,47 @@
+.despesaValue{
+    display: flex;
+    width: 97%;
+    text-align: center;
+    margin: 0 auto;
+    justify-content: space-between;
+    background-color: rgb(255, 165, 159);
+    margin-bottom: 2%;
+    padding: 1% 1% 1% 1%;
+    border-radius: 10px;
+}
+
+
+.despesaValue h4:first-child {
+    font-weight: bold;
+    min-width: 20%;
+}
+
+.category_text {
+    display: flex;
+    align-items: center;
+}
+
+.category_text span {
+    display: block;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin-right: 5px;
+    background-color: white;
+}
+
+.category_text .1 {
+    background-color: #ff00009c;
+}
+
+.category_text .2 {
+    background-color: #ffa600a4;
+}
+
+.despesaAction {
+    text-decoration: none;
+    border: none;
+}
+.despesaAction button:first-child {
+    margin-right:10px;
+}
