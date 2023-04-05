@@ -46,6 +46,11 @@
     margin-right:10px;
 }
 
+@media screen and (max-width: 768px) {
+    .despesaAction {
+        width: 100px;
+    }
+}
 
 .form_card {
     width: 100%;

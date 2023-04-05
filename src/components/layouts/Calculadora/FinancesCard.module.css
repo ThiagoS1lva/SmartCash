@@ -46,6 +46,13 @@
     margin-right:10px;
 }
 
+@media screen and (max-width: 768px) {
+    .financeAction {
+        width: 100px;
+    }
+}
+
+
 .form_card {
     width: 100%;
     display: flex;
