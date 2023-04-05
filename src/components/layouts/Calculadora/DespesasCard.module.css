@@ -45,3 +45,37 @@
 .despesaAction button:first-child {
     margin-right:10px;
 }
+
+
+.form_card {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.form_card input {
+    width: 20%;
+    border: none;
+    background-color: rgb(156, 22, 22);
+    color: white;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.form_card select {
+    border: none;
+}
+
+.form_card button {
+    background-color: #222;
+    color: #FFF;
+    padding: 0.7em .4em;
+    text-decoration: none;
+    transition: .5s;
+    cursor: pointer;
+    border: none;
+    border-radius: 5%;
+}
+
+.form_card button:hover {
+    color: #e69e03;
+}
