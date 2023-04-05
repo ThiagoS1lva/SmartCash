@@ -28,7 +28,7 @@ function FormFinanças({ btnText }) {
 
         const formData = new FormData(event.target);
         const name = formData.get('name');
-        const budget = formData.get('budget');
+        const budget = parseInt(formData.get('budget'));
         const data = formData.get('data');
         const category_id = formData.get('category_id');
 
@@ -58,7 +58,7 @@ function FormFinanças({ btnText }) {
     return (
         <form className={styles.form} onSubmit={handleSubmit}>
             <Input type="text" text="Nome da renda" name="name" placeholder="Insira o nome do renda" />
-            <Input type="text" text="Valor da renda" name="budget" placeholder="Insira o valor do renda" />
+            <Input type="number" text="Valor da renda" name="budget" placeholder="Insira o valor do renda" />
             <Input type="date" text="Data" name="data" />
             <Select name="category_id" text="Selecione a categoria" options={categories} />
             <SubmitButton text={btnText} />

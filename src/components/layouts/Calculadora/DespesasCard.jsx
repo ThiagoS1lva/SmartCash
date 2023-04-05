@@ -3,6 +3,25 @@ import { BsPencil, BsFillTrashFill } from 'react-icons/bs';
 
 
 function DespesasCard({ id, name, budget, category, handleRemove }) {
+
+
+    const handleDelete = () => {
+        fetch(`http://localhost:5000/despesas/${id}`, {
+            method: 'DELETE',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+        })
+            .then((res) => res.json())
+            .then(() => {
+                // Remova o item financeiro da lista
+                handleRemove(id);
+            })
+            .catch((err) => console.log(err));
+    };
+
+
+
     return (
         <div className={styles.despesaValue}>
             <h4>{name}</h4>
@@ -17,7 +36,7 @@ function DespesasCard({ id, name, budget, category, handleRemove }) {
                     <BsPencil />
                 </button>
                 <button>
-                    <BsFillTrashFill onClick={() => handleRemove(id)} />
+                    <BsFillTrashFill onClick={handleDelete} />
                 </button>
             </div>
         </div>

@@ -31,6 +31,10 @@ function Calculadora_main() {
             })
     }, [])
 
+    const handleRemoveF = (id) => {
+        setFinancesProjects((prevFinances) => prevFinances.filter((finance) => finance.id !== id));
+    };
+
     useEffect(() => {
         fetch('http://localhost:5000/despesas', {
             method: 'GET',
@@ -48,6 +52,9 @@ function Calculadora_main() {
             })
     }, [])
 
+    const handleRemoveD = (id) => {
+        setDespesasProjects((prevFinances) => prevFinances.filter((finance) => finance.id !== id));
+    };
 
     return (
         <>
@@ -72,6 +79,7 @@ function Calculadora_main() {
                                         budget={financesProject.budget}
                                         key={financesProject.id}
                                         category={financesProject.category_id}
+                                        handleRemove={handleRemoveF}
                                     />
                                 ))}
                         </Col>
@@ -80,7 +88,7 @@ function Calculadora_main() {
 
             </Container>
             <Container fluid style={{ marginBottom: "5%" }}>
-                <Row style={{width:"99.9%"}}>
+                <Row style={{ width: "99.9%" }}>
                     <Col>
                         <h1 className={styles.despesas_calculadora}>Despesas</h1>
                         <Row>
@@ -101,6 +109,7 @@ function Calculadora_main() {
                                             budget={despesasProjects.budget}
                                             key={despesasProjects.id}
                                             category={despesasProjects.category_id}
+                                            handleRemove={handleRemoveD}
                                         />
                                     ))}
                             </Col>

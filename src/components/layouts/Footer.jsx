@@ -23,8 +23,7 @@ function Footer() {
                         <h4>Nossas Páginas</h4>
                         <ul>
                             <li><Link to="/">Home</Link></li>
-                            <li><Link to="/calculadora">Calculadora de orçamento</Link></li>
-                            <li><Link to="/grafico">Gráficos e relatórios</Link></li>
+                            <li><Link to="/calculadora">Finanças</Link></li>
                             <li><Link to="/conta">Gerenciamento ao cliente</Link></li>
                         </ul>
                     </div>
