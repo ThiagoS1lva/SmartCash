@@ -2,10 +2,11 @@ import styles from './DespesasCard.module.css';
 import { BsPencil, BsFillTrashFill } from 'react-icons/bs';
 import { useState } from 'react';
 
-function DespesasCard({ id, name, budget, category, handleRemove }) {
+function DespesasCard({ id, name, data, budget, category, handleRemove }) {
 
     const [isEditing, setIsEditing] = useState(true);
     const [updateName, setUpdateName] = useState(name);
+    const [updateData, setUpdateData] = useState(data);
     const [updateBudget, setUpdateBudget] = useState(budget);
     const [updateCategory, setUpdateCategory] = useState(category);
 
@@ -35,7 +36,8 @@ function DespesasCard({ id, name, budget, category, handleRemove }) {
     const handleUpdate = (e) => {
         const financeToUpdate = {
             name: updateName,
-            budget: updateBudget,
+            budget: parseInt(updateBudget),
+            data: updateData,
             category_id: updateCategory
         };
 
@@ -59,6 +61,7 @@ function DespesasCard({ id, name, budget, category, handleRemove }) {
                 <>
                     <h4>{name}</h4>
                     <h4>R${budget}</h4>
+                    <h4>{data}</h4>
                     <h4 className={styles.category_text}>
                         <span className={`${styles[category]}`}></span>
 
@@ -87,6 +90,11 @@ function DespesasCard({ id, name, budget, category, handleRemove }) {
                             maxLength={10}
                             value={updateBudget}
                             onChange={(e) => setUpdateBudget(e.target.value)}
+                        />
+                        <input
+                            type="date"
+                            value={updateData} // inclua o valor original de data aqui
+                            onChange={(e) => setUpdateData(e.target.value)}
                         />
                         <select
                             value={updateCategory}

@@ -69,12 +69,14 @@ function Calculadora_main() {
                             <div className={styles.titleFinance}>
                                 <h2>Nome</h2>
                                 <h2>Valor</h2>
+                                <h2>Data</h2>
                                 <h2>Categoria</h2>
                             </div>
                             {financesProjects.length > 0 &&
                                 financesProjects.map((financesProject) => (
                                     <FinancesCard
                                         id={financesProject.id}
+                                        data = {financesProject.data}
                                         name={financesProject.name}
                                         budget={financesProject.budget}
                                         key={financesProject.id}
@@ -99,12 +101,14 @@ function Calculadora_main() {
                                 <div className={styles.titleFinance}>
                                     <h2>Nome</h2>
                                     <h2>Valor</h2>
+                                    <h2>Data</h2>
                                     <h2>Categoria</h2>
                                 </div>
                                 {despesasProjects.length > 0 &&
                                     despesasProjects.map((despesasProjects) => (
                                         <DespesasCard
                                             id={despesasProjects.id}
+                                            data = {despesasProjects.data}
                                             name={despesasProjects.name}
                                             budget={despesasProjects.budget}
                                             key={despesasProjects.id}

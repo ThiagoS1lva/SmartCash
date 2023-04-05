@@ -2,31 +2,19 @@
   "finances": [
     {
       "name": "asd",
-      "budget": "235",
-      "category_id": "1",
-      "id": 2
+      "budget": 1236,
+      "data": "2023-06-15",
+      "category_id": "2",
+      "id": 1
     }
   ],
   "despesas": [
     {
-      "name": "asd",
-      "budget": "1234",
-      "category_id": "2",
-      "id": 5
-    },
-    {
-      "name": "asd",
-      "budget": 123,
-      "data": "2232-03-31",
-      "category_id": "2",
-      "id": 6
-    },
-    {
-      "name": "zxc",
-      "budget": 545,
-      "data": "4454-05-04",
-      "category_id": "2",
-      "id": 7
+      "name": "asdasd",
+      "budget": 423,
+      "data": "2023-04-16",
+      "category_id": "1",
+      "id": 1
     }
   ],
   "categories": [
