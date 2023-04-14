@@ -4,7 +4,7 @@
     text-align: center;
     margin: 0 auto;
     justify-content: space-between;
-    background-color: rgb(255, 165, 159);
+    background-color: #FFADA2;
     margin-bottom: 2%;
     padding: 1% 1% 1% 1%;
     border-radius: 10px;
@@ -60,10 +60,11 @@
 .form_card input {
     width: 20%;
     border: none;
-    background-color: rgb(156, 22, 22);
-    color: white;
-    border-radius: 10px;
+    background-color: #FAEFED;
+    color: rgb(0, 0, 0);
+    border-radius: 4px;
     text-align: center;
+    font-weight: bold;
 }
 
 .form_card select {

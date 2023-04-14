@@ -8,6 +8,8 @@ import FormDespesas from './FormDespesas';
 import FinancesCard from './FinancesCard';
 import DespesasCard from './DespesasCard';
 import { useState, useEffect } from 'react';
+import FInanceTotal from './financeTotal';
+import DespesaTotal from './DespesaTotal';
 
 function Calculadora_main() {
 
@@ -23,7 +25,6 @@ function Calculadora_main() {
         })
             .then((resp) => resp.json())
             .then((data) => {
-                console.log(data);
                 setFinancesProjects(data);
             })
             .catch((err) => {
@@ -44,7 +45,6 @@ function Calculadora_main() {
         })
             .then((resp) => resp.json())
             .then((data) => {
-                console.log(data);
                 setDespesasProjects(data);
             })
             .catch((err) => {
@@ -60,7 +60,7 @@ function Calculadora_main() {
         <>
             <Container fluid style={{ marginBottom: "5%" }}>
                 <Row>
-                    <h1 className={styles.ganhos_calculadora}>Ganhos</h1>
+                    <h1 className={styles.ganhos_calculadora}>Renda</h1>
                     <Row>
                         <Col>
                             <FormFinanças btnText="Adicionar renda" />
@@ -84,6 +84,7 @@ function Calculadora_main() {
                                         handleRemove={handleRemoveF}
                                     />
                                 ))}
+                                <FInanceTotal/>
                         </Col>
                     </Row>
                 </Row>
@@ -92,7 +93,7 @@ function Calculadora_main() {
             <Container fluid style={{ marginBottom: "5%" }}>
                 <Row style={{ width: "99.9%" }}>
                     <Col>
-                        <h1 className={styles.despesas_calculadora}>Despesas</h1>
+                        <h1 className={styles.despesas_calculadora}>Despesa</h1>
                         <Row>
                             <Col>
                                 <FormDespesas btnText="Adicionar despesa" />
@@ -116,6 +117,7 @@ function Calculadora_main() {
                                             handleRemove={handleRemoveD}
                                         />
                                     ))}
+                                    <DespesaTotal/>
                             </Col>
                         </Row>
                     </Col>

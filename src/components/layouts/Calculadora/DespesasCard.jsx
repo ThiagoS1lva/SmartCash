@@ -22,6 +22,7 @@ function DespesasCard({ id, name, data, budget, category, handleRemove }) {
             .then((res) => res.json())
             .then(() => {
                 // Remova o item financeiro da lista
+                window.location.reload();
                 handleRemove(id);
             })
             .catch((err) => console.log(err));

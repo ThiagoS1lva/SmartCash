@@ -1,0 +1,37 @@
+@import url("https://fonts.googleapis.com/css2?family=Audiowide&display=swap");
+
+.em_breve {
+    margin-top: 2%;
+    margin-bottom: 5%;
+    text-align: center;
+}
+
+.em_breve h1 {
+    margin: auto;
+    font-family: "Audiowide", cursive;
+    font-size: 4vw;
+}
+
+@media screen and (max-width: 768px) {
+    .em_breve img {
+        width: 100%;
+    }
+    .em_breve h1 {
+        font-size: 8vw;
+    }
+}
+
+.rise {
+    text-shadow: -0.01em -0.01em 0.01em #000;
+	animation: rise 2s ease-in-out 0.5s forwards;
+}
+
+@keyframes rise {
+	to {
+		text-shadow: 0em 0.01em rgb(255, 198, 151), 0em 0.02em rgb(255, 207, 167), 0em 0.02em 0.03em rgb(255, 203, 160),
+			-0.01em 0.01em #333, -0.02em 0.02em #333, -0.03em 0.03em #333,
+			-0.04em 0.04em #333, -0.01em -0.01em 0.03em #000, -0.02em -0.02em 0.03em #000,
+			-0.03em -0.03em 0.03em #000;
+		transform: translateY(-0.025em) translateX(0.04em);
+	}
+}

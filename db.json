@@ -2,30 +2,16 @@
   "finances": [
     {
       "name": "Salario",
-      "budget": 2000,
+      "budget": 2200,
       "data": "2022-02-18",
       "category_id": "2",
       "id": 3
-    },
-    {
-      "name": "Bolsa da J",
-      "budget": 606,
-      "data": "2023-05-10",
-      "category_id": "1",
-      "id": 5
-    },
-    {
-      "name": "Aux",
-      "budget": 1200,
-      "data": "2022-10-20",
-      "category_id": "1",
-      "id": 6
     }
   ],
   "despesas": [
     {
       "name": "Aluguel",
-      "budget": 820,
+      "budget": 1200,
       "data": "2023-04-10",
       "category_id": "1",
       "id": 1

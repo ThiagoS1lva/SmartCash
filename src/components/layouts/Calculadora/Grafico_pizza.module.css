@@ -1,0 +1,20 @@
+.grafico_subtitle {
+    font-weight: bold;
+    padding-left: 2%;
+}
+
+.grafico_texto {
+    width: 60%;
+    font-weight: 560;
+}
+
+.grafico_analise {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2%;
+}
+
+.grafico_analise h4 {
+    font-weight: 590;
+}
