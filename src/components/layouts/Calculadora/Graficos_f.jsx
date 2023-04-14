@@ -13,7 +13,7 @@ class Graficos extends Component {
         fetch("http://localhost:5000/finances")
             .then((response) => response.json())
             .then((data) => {
-                const chartData = [["Data", "Finanças"]];
+                const chartData = [["Data", "Renda"]];
                 data.forEach((item) => {
                     chartData.push([`${item.name} - ${item.data}`, item.budget]);
                 });
@@ -30,7 +30,7 @@ class Graficos extends Component {
                 chartType="ColumnChart"
                 data={this.state.chartData}
                 options={{
-                    title: "Finanças",
+                    title: "Renda",
                     fontSize: 18,
                     fontWeight: "bold",
                     hAxis: {

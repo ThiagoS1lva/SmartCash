@@ -18,3 +18,13 @@
 .grafico_analise h4 {
     font-weight: 590;
 }
+
+.saldo {
+font-weight: bold;
+    color: #0d9914;
+}
+
+.prejuizo {
+    font-weight: bold;
+    color: #e70303;
+}

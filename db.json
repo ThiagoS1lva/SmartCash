@@ -6,12 +6,19 @@
       "data": "2022-02-18",
       "category_id": "2",
       "id": 3
+    },
+    {
+      "name": "Aux",
+      "budget": 1200,
+      "data": "2023-05-10",
+      "category_id": "1",
+      "id": 4
     }
   ],
   "despesas": [
     {
       "name": "Aluguel",
-      "budget": 1200,
+      "budget": 3000,
       "data": "2023-04-10",
       "category_id": "1",
       "id": 1

@@ -1,10 +1,8 @@
 import Calculadora from './components/pages/Calculadora'
 import Cliente from './components/pages/Cliente'
 import Contas from './components/pages/Contas'
-import Grafico from './components/pages/Grafico'
 import Home_page from './components/pages/Home_page'
 import Menu from './components/layouts/Menu'
-import styles from './App.module.css'
 
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 
