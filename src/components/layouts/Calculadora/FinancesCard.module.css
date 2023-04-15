@@ -4,7 +4,7 @@
     text-align: center;
     margin: 0 auto;
     justify-content: space-between;
-    background-color: #B7FAC3;
+    background-color: #2F7BFA;
     margin-bottom: 2%;
     padding: 1% 1% 1% 1%;
     border-radius: 10px;
@@ -61,7 +61,7 @@
 .form_card input {
     width: 20%;
     border: none;
-    background-color: #E3FCE8;
+    background-color: #ffffff8f;
     color: rgb(5, 5, 5);
     font-weight: bold;
     border-radius:4px;

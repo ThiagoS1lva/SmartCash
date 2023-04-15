@@ -104,9 +104,9 @@ class Grafico_Pizza extends Component {
                     <h5 className={styles.grafico_texto}> <b style={{ color: "red" }}>Atenção:</b> Este gráfico mostra apenas a relação entre sua finança e suas despesas. Caso suas despesas sejam maiores do que sua finança, ele mostrará suas despesas como 100%, uma vez que não haverá saldo disponível para ser exibido no gráfico.</h5>
                 </div>
                 <div className={styles.grafico_analise}>
-                    <h4> &#x2022;Sua renda mais alta é <b>{nomeMaisAlto}</b> no valor de <b style={{ color: 'green' }}>R${valorMaisAlto}</b></h4>
+                    <h4> &#x2022;Sua renda mais alta é <b>{nomeMaisAlto}</b> no valor de <b style={{ color: '#2F7BFA' }}>R${valorMaisAlto}</b></h4>
 
-                    <h4> &#x2022;Sua despesa mais alta é <b>{nomeDAlto}</b> no valor de <b style={{ color: 'red' }}>R${despesaMaisAlta}</b></h4>
+                    <h4> &#x2022;Sua despesa mais alta é <b>{nomeDAlto}</b> no valor de <b style={{ color: '#FA5F48' }}>R${despesaMaisAlta}</b></h4>
                 </div>
             </div>
         );

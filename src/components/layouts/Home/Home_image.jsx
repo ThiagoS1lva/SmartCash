@@ -13,7 +13,7 @@ function Home_image() {
             <Row>
                 <Col>
                     <h2 className={styles.text}>Transforme sua vida financeira de maneira fácil e inteligente com nosso site de finanças. Organize suas finanças pessoais e conquiste a tão sonhada <b>estabilidade financeira.</b></h2>
-                    <Link to='/calculadora'><button className={styles.button56}>Experimente agora!</button></Link>
+                    <Link to='/calculadora' className={styles.linkImage}><button className={styles.button56}>Experimente agora!</button></Link>
                 </Col>
                 <Col>
                     <img src={imagem} className={styles.imagem}/>

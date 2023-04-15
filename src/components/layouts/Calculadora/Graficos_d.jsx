@@ -32,7 +32,7 @@ class Graficos extends Component {
                 options={{
                     title: "Despesas",
                     fontSize: 18,
-                    colors: ["#DB4437"],
+                    colors: ["#AD3421"],
                     fontWeight: "bold",
                     hAxis: {
                         title: "Nome / Data",

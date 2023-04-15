@@ -31,6 +31,7 @@ class Graficos extends Component {
                 data={this.state.chartData}
                 options={{
                     title: "Renda",
+                    colors : ["#2A5BAD"],
                     fontSize: 18,
                     fontWeight: "bold",
                     hAxis: {
