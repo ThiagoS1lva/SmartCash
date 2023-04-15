@@ -33,6 +33,7 @@
     text-align: center;
     padding-top: 1%;
     transition: all 0.2s ease-in-out;
+    cursor: pointer;
 }
 
 .card img {
@@ -44,33 +45,33 @@
     font-weight: 600;
 }
 
-.Row:nth-child(1) .Col:nth-child(1):hover {
+.Row:nth-child(2) .Col:nth-child(1):hover {
     box-shadow: 0px 0px 10px rgb(19, 254, 99);
 }
-.Row:nth-child(1) .Col:nth-child(2):hover {
+.Row:nth-child(2) .Col:nth-child(2):hover {
     box-shadow: 0px 0px 10px rgb(0, 188, 150);
 }
-.Row:nth-child(1) .Col:nth-child(3):hover {
+.Row:nth-child(2) .Col:nth-child(3):hover {
     box-shadow: 0px 0px 10px rgb(15, 198, 91);
 }
 
-.Row:nth-child(2) .Col:nth-child(1):hover {
+.Row:nth-child(3) .Col:nth-child(1):hover {
     box-shadow: 0px 0px 10px rgb(25, 94, 156);
 }
-.Row:nth-child(2) .Col:nth-child(2):hover {
+.Row:nth-child(3) .Col:nth-child(2):hover {
     box-shadow: 0px 0px 10px rgb(235, 112, 1);
 }
-.Row:nth-child(2) .Col:nth-child(3):hover {
+.Row:nth-child(3) .Col:nth-child(3):hover {
     box-shadow: 0px 0px 10px rgb(255, 122, 1);
 }
 
-.Row:nth-child(3) .Col:nth-child(1):hover {
+.Row:nth-child(4) .Col:nth-child(1):hover {
     box-shadow: 0px 0px 10px rgb(130, 9, 209);
 }
-.Row:nth-child(3) .Col:nth-child(2):hover {
+.Row:nth-child(4) .Col:nth-child(2):hover {
     box-shadow: 0px 0px 10px rgb(216, 17, 92);
 }
-.Row:nth-child(3) .Col:nth-child(3):hover {
+.Row:nth-child(4) .Col:nth-child(3):hover {
     box-shadow: 0px 0px 10px rgb(224, 0, 0);
 }
 

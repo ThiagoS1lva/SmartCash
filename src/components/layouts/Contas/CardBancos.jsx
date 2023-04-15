@@ -10,9 +10,12 @@ import pagseguro from '../../../assets/img/bancos/pagseguro.png';
 import picpay from '../../../assets/img/bancos/picpay.png';
 import santander from '../../../assets/img/bancos/santander.png';
 import CardBancos_login from './CardBancos_login';
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
+import loading from '../../../assets/img/loading.gif'
 
 function CardBancos() {
+
+
 
     const [selectedOption, setSelectedOption] = useState([]);
     const [botaoClicado, setbotaoClicado] = useState(false);
@@ -35,9 +38,6 @@ function CardBancos() {
                         <h1>Sincronize os dados de outros apps de finanças!</h1>
                         <h3>É só clicar em qual você quer!</h3>
                     </div>
-
-
-
                     {/*PARTE 1*/}
                     <div className={styles.Row}>
                         <div className={styles.Col}>

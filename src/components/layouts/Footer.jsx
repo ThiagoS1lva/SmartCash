@@ -5,6 +5,7 @@ import Github from '../../assets/img/icons/github.png'
 import { Link } from 'react-router-dom'
 
 
+
 function Footer() {
     return (
         <footer className={styles.footer}>
@@ -23,7 +24,7 @@ function Footer() {
                         <h4>Nossas Páginas</h4>
                         <ul>
                             <li><Link to="/">Home</Link></li>
-                            <li><Link to="/calculadora">Finanças</Link></li>
+                            <li><Link to="/finanças">Finanças</Link></li>
                             <li><Link to="/conta">Gerenciamento ao cliente</Link></li>
                         </ul>
                     </div>
