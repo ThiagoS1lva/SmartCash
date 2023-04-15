@@ -19,12 +19,7 @@ function Contas() {
             {loadingEqualizer ? (
                 <img src={loading} className={styles.loading} />) : (
                 <>
-                    <div className={styles.containerTexto}>
-                        <h1>Sincronize os dados de outros apps de finanças!</h1>
-                        <h2>É só clicar em qual você quer!</h2>
-                    </div>
                     <CardBancos />
-                    <h1 style={{textAlign:'center', fontWeight : 'bold', marginBottom : '5%'}}>Mais bancos em breve!</h1>
                     <Footer />
                 </>
             )

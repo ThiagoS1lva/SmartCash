@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.login {
+    text-align: center;
+    margin-top: 2%;
+    font-weight: bold;
+}
+
+body {
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.container_login {
+    width: 30%;
+    text-align: center;
+    margin: 4% auto;
+    padding: 1% 2%;
+    border-radius: 20px;
+}
+
+.container_login h1 {
+    font-weight: bold;
+    color: white;
+}
+
+.inputBox {
+    position: relative;
+    width: 75%;
+    margin: 0 auto;
+    padding-top: 4%;
+}
+
+@media screen and (max-width: 1050px) {
+    .container_login {
+        width: 45%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container_login {
+        width: 80%;
+    }
+}
+
+
+.inputBox input {
+    width: 100%;
+    font-weight: bold;
+    padding: 10px;
+    border: 1px solid rgba(255,255,255,0,25);
+    background-color: rgb(221, 221, 221);
+    border-radius: 5px;
+    outline: none;
+    box-shadow: none;
+    color: #000000;
+    font-size: 1em;
+    
+}
+
+.inputBox span {
+    position: absolute;
+    left: 5px;
+    padding: 10px;
+    pointer-events: none;
+    font-size: 21px;
+    color: rgba(255,255,255,0,25);
+    transition: 0.5s;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.inputBox input:valid ~ span,
+.inputBox input:focus ~ span {
+    color: white;
+    transform: translateX(10px) translateY(-50%);
+    font-size: 1em;
+    padding: 0 10px;
+    background-color: rgba(36, 36, 36);
+    border-radius: 5px;
+}
+
+.btn {
+    background-color: #222;
+    color: #FFF;
+    width: 50%;
+    border-radius: 10px;
+    padding: 0.7em 1.2em;
+    text-decoration: none;
+    transition: .5s;
+    cursor: pointer;
+    border: none;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.btn:hover {
+    color: #000000;
+    background-color: white;
+    box-shadow: 0px 0px 5px black;
+}
